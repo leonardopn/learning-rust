@@ -51,6 +51,23 @@ fn type_of_integers_variables() {
     }
 }
 
+fn type_of_floats_variables() {
+    println!("Floats can be of different sizes:");
+
+    println!(
+        "The f32 accept numbers between: {} and {}",
+        f32::MIN,
+        f32::MAX
+    );
+    println!(
+        "The f64 accept numbers between: {} and {}",
+        f64::MIN,
+        f64::MAX
+    );
+
+    println!("");
+}
+
 fn main() {
     mutable();
     println!("");
@@ -58,5 +75,7 @@ fn main() {
     println!("");
     shadowing();
     println!("");
-    type_of_integers_variables()
+    type_of_integers_variables();
+    println!("");
+    type_of_floats_variables();
 }
